@@ -6,16 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="009f5033-a141-4480-b632-c5a6a3716acd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AbstractPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ButtonsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ButtonsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/ElementsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ElementsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/WebTablesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/WebTablesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/BaseTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/buttons/ButtonsMessageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/buttons/ButtonsMessageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/webtable/EditRecordTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/webtable/EditRecordTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/webtable/RegistrationFormNegativeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/webtable/RegistrationFormNegativeTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/webtable/RegistrationFormTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/webtable/RegistrationFormTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,31 +58,40 @@
     "settings.editor.selected.configurable": "vcs.Subversion"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.ButtonsMessageTest.testClickMeButtonPositive">
-    <configuration name="dz-14 [clean]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="clean" />
-              </list>
-            </option>
-            <option name="pomFileName" value="pom.xml" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
+  <component name="RunManager" selected="TestNG.ButtonsMessageTest (1)">
+    <configuration name="ButtonsMessageTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="dz-14-selinide" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.buttons.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.buttons" />
+      <option name="MAIN_CLASS_NAME" value="tests.buttons.ButtonsMessageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ButtonsMessageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="dz-14-selenide" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.buttons.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.buttons" />
+      <option name="MAIN_CLASS_NAME" value="tests.buttons.ButtonsMessageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ButtonsMessageTest.testClickMeButtonPositive" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="dz-14-selenide" />
@@ -108,34 +111,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationFormNegativeTests.testRedBorderAlertOfAllElements" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="dz-14" />
+    <configuration name="ButtonsMessageTest.testClickMeButtonSelenidePositive" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="dz-14-selenide" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.webtable.*" />
+          <option name="PATTERN" value="tests.buttons.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.webtable" />
-      <option name="MAIN_CLASS_NAME" value="tests.webtable.RegistrationFormNegativeTests" />
-      <option name="METHOD_NAME" value="testRedBorderAlertOfAllElements" />
+      <option name="PACKAGE_NAME" value="tests.buttons" />
+      <option name="MAIN_CLASS_NAME" value="tests.buttons.ButtonsMessageTest" />
+      <option name="METHOD_NAME" value="testClickMeButtonSelenidePositive" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="dz-14" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -160,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ButtonsMessageTest.testClickMeButtonPositive" />
+        <item itemvalue="TestNG.ButtonsMessageTest (1)" />
         <item itemvalue="TestNG.tests.buttons" />
-        <item itemvalue="TestNG.tests" />
-        <item itemvalue="Maven.dz-14 [clean]" />
-        <item itemvalue="TestNG.RegistrationFormNegativeTests.testRedBorderAlertOfAllElements" />
+        <item itemvalue="TestNG.ButtonsMessageTest" />
+        <item itemvalue="TestNG.ButtonsMessageTest.testClickMeButtonSelenidePositive" />
+        <item itemvalue="TestNG.ButtonsMessageTest.testClickMeButtonPositive" />
       </list>
     </recent_temporary>
   </component>

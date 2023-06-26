@@ -6,8 +6,7 @@ import io.qameta.allure.Step;
 
 import java.util.List;
 
-import static com.codeborne.selenide.Selenide.$$;
-import static com.codeborne.selenide.Selenide.$$x;
+import static com.codeborne.selenide.Selenide.*;
 
 public class ElementsPage{
 
@@ -27,6 +26,7 @@ public class ElementsPage{
                 .click();
         return new WebTablesPage();
     }
+    @Step("Go to ButtonsPage by click on the Component with name Buttons")
     public ButtonsPage clickOnButtonPageComponentWithReturnPage(){
         secondGroupComponents.stream()
                 .filter(e -> e.getText().equals(TEXT_BUTTONS))

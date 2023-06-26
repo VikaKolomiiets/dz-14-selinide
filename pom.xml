@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>dz-14-selenide</artifactId>
+    <artifactId>dz-14-selinide</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -35,28 +35,15 @@
         </dependency>
 
         <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>5.3.3</version>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide-testng</artifactId>
+            <version>6.15.0</version>
         </dependency>
 
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
             <version>2.22.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-selenide</artifactId>
-            <version>2.22.2</version>
-        </dependency>
-
-
-        <dependency>
-            <groupId>com.codeborne</groupId>
-            <artifactId>selenide-testng</artifactId>
-            <version>6.15.0</version>
         </dependency>
 
 

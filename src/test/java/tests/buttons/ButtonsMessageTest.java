@@ -23,16 +23,11 @@ public class ButtonsMessageTest extends BaseTests {
     }
 
     @Test
-    public void testClickMeButtonSelenidePositive(){
+    public void testClickMeButtonSelenidePositive() {
         BasePage basePage = new BasePage();
-        basePage.clickElementsPageButton()
-                        .clickOnButtonPageComponent();
-
-
-
-
-
-
-
+        Assert.assertTrue(
+                basePage.clickElementsPageButton().
+                        clickOnButtonPageComponent().
+                        isAppearedRequiredMessageText());
     }
 }
