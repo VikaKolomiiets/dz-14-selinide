@@ -1,21 +1,38 @@
 package tests.buttons;
 
+import com.codeborne.selenide.Condition;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.ButtonsPage;
-import pages.ElementsPage;
+import pages.BasePage;
 import tests.base.BaseTests;
+
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
 public class ButtonsMessageTest extends BaseTests {
 
     @Test
-    public void testClickMeButtonPositive(){
-        ElementsPage elementsPage = basePage.clickElementsPageButton();
-        ButtonsPage buttonsPage = elementsPage.clickOnButtonPageComponent();
-
-        String actualText = buttonsPage.getTestAfterClickOnButtonClickMe();
+    public void testClickMeButtonPositive() {
+        BasePage basePage = new BasePage();
+        String actualText = basePage
+                .clickElementsPageButtonWithCode()
+                .clickOnButtonPageComponentWithReturnPage()
+                .getTestAfterClickOnButtonClickMe();
         String expectedText = "You have done a dynamic click";
-
         Assert.assertEquals(actualText, expectedText, "Text is not equal to expected after click on ClickMe button.");
+    }
+
+    @Test
+    public void testClickMeButtonSelenidePositive(){
+        BasePage basePage = new BasePage();
+        basePage.clickElementsPageButton()
+                        .clickOnButtonPageComponent();
+
+
+
+
+
+
+
     }
 }

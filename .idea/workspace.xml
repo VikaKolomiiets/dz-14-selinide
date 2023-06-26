@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="009f5033-a141-4480-b632-c5a6a3716acd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AbstractPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ButtonsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ButtonsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ElementsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ElementsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/WebTablesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/WebTablesPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/BaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/buttons/ButtonsMessageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/buttons/ButtonsMessageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/webtable/EditRecordTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/webtable/EditRecordTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/webtable/RegistrationFormNegativeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/webtable/RegistrationFormNegativeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/webtable/RegistrationFormTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/webtable/RegistrationFormTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +64,7 @@
     "settings.editor.selected.configurable": "vcs.Subversion"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.tests.buttons">
+  <component name="RunManager" selected="TestNG.ButtonsMessageTest.testClickMeButtonPositive">
     <configuration name="dz-14 [clean]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -80,17 +90,17 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationFormNegativeTests.testAgeExceptionByRedBorderAlert" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="dz-14" />
+    <configuration name="ButtonsMessageTest.testClickMeButtonPositive" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="dz-14-selenide" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.webtable.*" />
+          <option name="PATTERN" value="tests.buttons.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.webtable" />
-      <option name="MAIN_CLASS_NAME" value="tests.webtable.RegistrationFormNegativeTests" />
-      <option name="METHOD_NAME" value="testAgeExceptionByRedBorderAlert" />
+      <option name="PACKAGE_NAME" value="tests.buttons" />
+      <option name="MAIN_CLASS_NAME" value="tests.buttons.ButtonsMessageTest" />
+      <option name="METHOD_NAME" value="testClickMeButtonPositive" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -150,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ButtonsMessageTest.testClickMeButtonPositive" />
         <item itemvalue="TestNG.tests.buttons" />
         <item itemvalue="TestNG.tests" />
         <item itemvalue="Maven.dz-14 [clean]" />
         <item itemvalue="TestNG.RegistrationFormNegativeTests.testRedBorderAlertOfAllElements" />
-        <item itemvalue="TestNG.RegistrationFormNegativeTests.testAgeExceptionByRedBorderAlert" />
       </list>
     </recent_temporary>
   </component>

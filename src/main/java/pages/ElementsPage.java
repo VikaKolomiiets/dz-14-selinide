@@ -1,33 +1,47 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 
 import java.util.List;
 
-public class ElementsPage extends AbstractPage{
+import static com.codeborne.selenide.Selenide.$$;
+import static com.codeborne.selenide.Selenide.$$x;
 
-    private By firstGroupComponents = By.xpath("//li[@id='item-3']");
-    private By secondGroupComponents = By.cssSelector("#item-4>.text");
+public class ElementsPage{
+
+    private List<SelenideElement> firstGroupComponents = $$x("//li[@id='item-3']");
+    private List<SelenideElement> secondGroupComponents = $$("#item-4>.text");
+    private SelenideElement buttonPageComponent = $("#item-4>.text");
 
     private final String TEXT_WEB_TABLES ="Web Tables";
     private final String TEXT_BUTTONS ="Buttons";
 
-    public ElementsPage(WebDriver driver) {
-        super(driver);
-    }
 
     public WebTablesPage clickOnWebTablesComponent(){
-        WebElement button = this.getElementFromElementsByText(firstGroupComponents, TEXT_WEB_TABLES);
-        button.click();
-        return new WebTablesPage(this.getDriver());
+        firstGroupComponents.stream()
+                .filter(e -> e.getText().equals(TEXT_WEB_TABLES))
+                .findFirst()
+                .get()
+                .click();
+        return new WebTablesPage();
     }
+    public ButtonsPage clickOnButtonPageComponentWithReturnPage(){
+        secondGroupComponents.stream()
+                .filter(e -> e.getText().equals(TEXT_BUTTONS))
+                .findFirst()
+                .get()
+                .click();
+        return new ButtonsPage();
+    }
+    @Step("Go to ButtonsPage by click on the Component with name Buttons")
     public ButtonsPage clickOnButtonPageComponent(){
-        WebElement button = this.getElementFromElementsByText(secondGroupComponents, TEXT_BUTTONS);
-        button.click();
-        return new ButtonsPage(this.getDriver());
+        buttonPageComponent.shouldBe(Condition.visible).click();
+        return new ButtonsPage();
     }
+
+
 
 
 }

@@ -11,7 +11,7 @@ public class BaseTests {
     @BeforeClass
     public void setUpClass(){
         Configuration.browser = "chrome";
-        Configuration.browserSize="1024x768";
+        Configuration.browserSize="2048x1019";
     }
 
     @BeforeMethod

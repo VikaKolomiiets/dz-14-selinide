@@ -1,32 +1,34 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 
 import java.util.List;
 
-public class BasePage extends AbstractPage {
-    private By buttons = By.xpath("//div[@class='card-body']");
-    // $x(//div[@class='card-body']);
-    private By buttons2 = By.cssSelector(".card-body");
+import static com.codeborne.selenide.Selenide.*;
+
+public class BasePage {
+    private List<SelenideElement> pageButtons = $$(".card-body");
+    private SelenideElement elementsPageButton = $(".card-body");
 
 
-    public BasePage(WebDriver driver) {
-        super(driver);
+    @Step("Go to ElementsPage by click on the Button with name Elements")
+    public ElementsPage clickElementsPageButtonWithCode() {
+        pageButtons.stream()
+                .filter(e -> e.getText().equals("Elements"))
+                .findFirst()
+                .get()
+                .click();
+        return new ElementsPage();
     }
 
-    public ElementsPage clickElementsPageButton(){
-        List<WebElement> elements = this.findElementsVisibleWithFluentWait(buttons2);
-        WebElement temp = null;
-        for(WebElement element: elements){
-            if(element.getText().equals("Elements")){
-               temp = element;
-               break;
-            }
-        }
-        temp.click();
-        return new ElementsPage(this.getDriver());
+    @Step("Go to ElementsPage by click on the Button with name Elements")
+    public ElementsPage clickElementsPageButton() {
+        elementsPageButton
+                .shouldBe(Condition.visible)
+                .click();
+        return new ElementsPage();
     }
 
 }
