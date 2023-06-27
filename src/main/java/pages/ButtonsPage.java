@@ -21,15 +21,13 @@ public class ButtonsPage {
 
     @Step("Get appeared text after click on the Button with name ClickMe")
     public String getTestAfterClickOnButtonClickMe() {
-        try {
+
             buttons.stream()
                     .filter(e -> e.getText().equals(CLICK_ME_BUTTON))
                     .findFirst()
-                    .get()
+                    .orElseThrow()
                     .click();
-        } catch (NoSuchElementException e) {
-            throw new NoSuchElementException("element is not found");
-        }
+
         return appearedMessage.shouldBe(Condition.visible).getText();
     }
 
@@ -39,7 +37,7 @@ public class ButtonsPage {
             buttons.stream()
                     .filter(e -> e.getText().equals(CLICK_ME_BUTTON))
                     .findFirst()
-                    .get()
+                    .orElseThrow()
                     .click();
         } catch (NoSuchElementException e) {
             throw new NoSuchElementException("element is not found");

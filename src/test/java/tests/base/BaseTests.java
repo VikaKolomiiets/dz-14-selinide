@@ -17,6 +17,7 @@ public class BaseTests {
     @BeforeMethod
     public void setUpMethod(){
        Selenide.open("https://demoqa.com/");
+
     }
 
     @AfterClass

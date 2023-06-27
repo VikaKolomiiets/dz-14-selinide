@@ -13,8 +13,7 @@ public class ButtonsMessageTest extends BaseTests {
 
     @Test
     public void testClickMeButtonPositive() {
-        BasePage basePage = new BasePage();
-        String actualText = basePage
+        String actualText = new BasePage()
                 .clickElementsPageButtonWithCode()
                 .clickOnButtonPageComponentWithReturnPage()
                 .getTestAfterClickOnButtonClickMe();
@@ -24,9 +23,8 @@ public class ButtonsMessageTest extends BaseTests {
 
     @Test
     public void testClickMeButtonSelenidePositive() {
-        BasePage basePage = new BasePage();
         Assert.assertTrue(
-                basePage.clickElementsPageButton().
+                new BasePage().clickElementsPageButton().
                         clickOnButtonPageComponent().
                         isAppearedRequiredMessageText());
     }
